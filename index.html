@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quest</title>
+</head>
+<body>
+    <h1 id="title">The Space Escape</h1>
+    <p id="story">
+        You suddenly wake up. Wait, who is "you" or "me"? Do you even know your name? You're floating in open space.
+        It is becoming hard to breathe in your space suit.
+        The oxygen indicators inside are critically low.
+    </p>
+    <br>
+    <form id="myForm" onsubmit="fStep()">
+        <label>What's next?
+            <input type="text" id="action" autocomplete="off">
+            <input type="submit" hidden />
+        </label>
+    </form>
+    <div id="help" class="commands-hidden">
+        <div id="verbs">
+            start<br>
+            look<br>
+            check<br>
+            go to<br>
+            puncture<br>
+            fly to<br>
+            press<br>
+            enter<br>
+            eat<br>
+        </div>
+        <div id="nouns">
+            engine<br>
+            space suit<br>
+            food<br>
+            around<br>
+            red button<br>
+            engine<br>
+            space ship<br>
+        </div>
+    </div>
+
+    <button id="myButton" onclick="displayCommands()">Help with commands</button>
+</body>
+</html>
